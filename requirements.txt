@@ -1,14 +1,29 @@
-ipython
-jupyterlab
-loguru
-matplotlib
-notebook
-numpy
-pandas
-pip
-python-dotenv
-ruff
-scikit-learn
-tqdm
-typer
--e .
+# PDF & Document AI / OCR
+PyMuPDF
+doclayout_yolo
+easyocr
+pdfminer.six
+# table-transformer was removed due to fundamental incompatibility with the environment
+
+# Computer Vision & Image Enhancement
+opencv-contrib-python
+ultralyticsplus
+
+# Core ML & Utility Libraries
+accelerate
+arxiv
+huggingface_hub
+seqeval
+streamlit
+
+# --- Pinned Dependencies to resolve Colab conflicts ---
+# Force newer versions to keep Colab's default packages working
+packaging>=24.2.0
+tqdm>=4.67
+
+# --- Special Installations from GitHub Repositories ---
+# For the latest development version of ultralyics/YOLO
+git+https://github.com/ultralytics/ultralytics.git@main
+
+# For Real-ESRGAN image restoration
+git+https://github.com/xinntao/Real-ESRGAN.git#egg=realesrgan
